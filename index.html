@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zen Heritage | Temple Supplies &amp; Ritual Implements</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#8bcff8",
+                        "tertiary-container": "#005f83",
+                        "outline": "#877369",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed": "#c5e7ff",
+                        "on-primary-fixed": "#321200",
+                        "surface-tint": "#934b19",
+                        "surface-container-highest": "#efdfd8",
+                        "surface-container": "#fbebe3",
+                        "primary-fixed-dim": "#ffb68c",
+                        "surface-dim": "#e6d7d0",
+                        "surface-variant": "#efdfd8",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#004662",
+                        "on-secondary-container": "#745c00",
+                        "primary": "#6c2f00",
+                        "on-surface": "#221a16",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#372f2a",
+                        "inverse-primary": "#ffb68c",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#dac2b6",
+                        "on-error-container": "#93000a",
+                        "surface": "#fff8f5",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-container": "#ffc29f",
+                        "primary-fixed": "#ffdbc9",
+                        "on-surface-variant": "#54433a",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fff8f5",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffe088",
+                        "secondary-container": "#fed65b",
+                        "on-primary-fixed-variant": "#753401",
+                        "on-background": "#221a16",
+                        "secondary": "#735c00",
+                        "primary-container": "#8b4513",
+                        "surface-container-high": "#f5e5de",
+                        "on-tertiary-fixed": "#001e2d",
+                        "inverse-on-surface": "#feeee6",
+                        "on-tertiary-fixed-variant": "#004c6a",
+                        "on-tertiary-container": "#97d7ff",
+                        "surface-container-low": "#fff1eb",
+                        "background": "#fff8f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "xl": "40px",
+                        "margin": "32px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "sm": "8px",
+                        "xs": "4px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Noto Serif TC"],
+                        "headline-md": ["Noto Serif TC"],
+                        "headline-xl": ["Noto Serif TC"],
+                        "caption": ["Noto Serif TC"],
+                        "label-md": ["Noto Serif TC"],
+                        "headline-lg": ["Noto Serif TC"],
+                        "body-lg": ["Noto Serif TC"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "caption": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.02em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fff8f5;
+            color: #221a16;
+            font-family: 'Noto Serif TC', serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .seal-stamp {
+            width: 40px;
+            height: 40px;
+            background-color: #A52A2A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-stone-50 border-b border-stone-200">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-semibold text-amber-700 uppercase tracking-widest font-headline-md">
+                Zen Heritage
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-amber-700 border-b-2 border-amber-700 pb-1" href="#">Incense</a>
+<a class="font-body-md text-stone-500 hover:text-amber-700 transition-colors pb-1" href="#">Ritual Implements</a>
+<a class="font-body-md text-stone-500 hover:text-amber-700 transition-colors pb-1" href="#">Buddhist Garments</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center border-b-2 border-primary/20 focus-within:border-secondary transition-colors px-2 py-1">
+<span class="material-symbols-outlined text-stone-400 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-body-md w-48" placeholder="Search Archives..." type="text"/>
+</div>
+<button class="p-2 hover:bg-stone-100 transition-all duration-300 rounded-full">
+<span class="material-symbols-outlined text-stone-800" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="A high-resolution, atmospheric close-up of a single strand of premium agarwood incense burning in a minimalist bronze burner. Wisps of delicate, ethereal smoke curl gracefully against a moody, shadowed background of textured washi paper. The lighting is low and focused, highlighting the warm mahogany tones and gold accents of the ritual space. The overall mood is one of profound serenity, intellectual grounding, and sacred craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8bqmbvhWnAEh8Tz9Veum6nTpjzyw7TAaCpE5kf7QznA6r3K6QMJoT3fxIXzHeEUSxMqtQLMKt9fiXfRf5vg3Xs5pv3FKZliyGGKog4PTmoYiQVaRrMCWaCS3zFD3qDCBMi__JoiCXJBnNc_kjt3q_Tya9y5tN38VSA990xt08NEjIGV-3vTzpjKUurMqvv1u4zmVGRDWi3Ttkcmsbk9scczYDSIOa2aBYEj6eOWvqi5-aM42L_gnr_4Kh4AuaCqh2jp-9Mwm06Q"/>
+<div class="absolute inset-0 bg-stone-900/40"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<p class="font-label-md text-secondary-container tracking-[0.3em] uppercase mb-4">Established Tradition</p>
+<h1 class="font-headline-xl text-stone-50 mb-8 leading-tight">Ritual Objects for the Quiet Mind</h1>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-[#D4AF37] text-[#2C2C2C] px-8 py-3 rounded-[4px] font-label-md hover:brightness-110 transition-all active:scale-95">
+                        EXPLORE COLLECTION
+                    </button>
+<button class="bg-transparent border border-stone-50/30 text-stone-50 px-8 py-3 rounded-[4px] font-label-md hover:bg-stone-50/10 transition-all active:scale-95">
+                        OUR PHILOSOPHY
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Categories (Bento Grid Style) -->
+<section class="max-w-7xl mx-auto px-6 py-xl">
+<div class="flex items-center justify-between mb-lg">
+<h2 class="font-headline-lg text-primary">Sacred Collections</h2>
+<div class="h-px flex-grow mx-8 bg-primary/10"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[700px]">
+<div class="md:col-span-8 relative group overflow-hidden border border-primary/10 bg-stone-50">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A collection of traditional Japanese incense sticks organized neatly in a handcrafted paulownia wood box. The scene is shot from a top-down perspective on a weathered stone surface, emphasizing the tactile qualities of the natural materials. Soft, diffused daylight illuminates the scene, casting gentle shadows that enhance the wabi-sabi aesthetic of the composition. Warm wood tones dominate the palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1AZtWvYpsYEVZRMlBeMdW62gzMDXqfE_eqa38mo7AILkCPi0fA9PPpqPx4lNKGN5Em6_Qmxz09n4frHsGAZLVuw0UGw7rtP0lKPVXaDe8AgDUeJ3Vd1-q11KmC50rru6gI5tHmZ_umsQZM30R3ubHxmMTPgvsMRF7qSHunZKoSkWkFkNiobeG0LPSYnxyArajhH2P3xqr8NRqD0gQWOMbAj9R244IwpCGODV13ALLFa4sXDNAzKklZjme7f_3K92u9nozzbfy7g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline-md text-stone-50 mb-2">Incense</h3>
+<p class="font-body-md text-stone-300 max-w-sm">Rare aromatics harvested from sustainable old-growth forests.</p>
+</div>
+</div>
+<div class="md:col-span-4 grid grid-rows-2 gap-6">
+<div class="relative group overflow-hidden border border-primary/10 bg-stone-50">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A serene Buddha statue carved from weathered dark stone, sitting in a meditative posture. The lighting is dramatic and directional, coming from a single side to emphasize the fine details of the craftsmanship and the texture of the stone surface. The background is a clean, neutral cream color, allowing the solemnity and weight of the statue to command full attention." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnazHlCWNIDtpTYmtHrUiJhLvsy1BvwzofSHs7jQufz3CJ3K8F6dSj0tRSWEc0J_lG60c6mT6T2WsyWDsvKfPk6tUUu1hmAb9g8wXEGbC2kxPnSpUAOgYD7O6sJ9kgFpy39nOdHOLMIBUr8ycTy4xB3LVnkyLU4-CtZuk7FXF84AjLqSl3iMyK50DDMIQ4gJVEUu-w6PiexN_feqiUvbwvIfPdf5HZ4W7NqRQ6KBC6hKT_9FOBVdc0hUt_gEalu3TGufPc17czsA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-headline-md text-stone-50">Statues</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden border border-primary/10 bg-stone-50">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Macro detail of high-quality silk Buddhist garments, showing the intricate weave and the subtle sheen of the fabric. The color is a deep, rich mahogany with traditional patterns woven into the material. The lighting is soft and warm, highlighting the luxurious yet understated texture of the ritual attire. The composition is focused and intimate, emphasizing the quality of the traditional making process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbMeDUq1ldnn-xct5diihiZdkzZSspiDzPTmiJzP-UIvQCBCnI3XGtpOHxjwFcam3GoTTTRWYm9gmLvtfqWyS_nkHuMzXJDFLAeueHbhYJBMFYsqeVgoj2_29cJ-zAjEaZZS702_AucJ5G9dKrvpSVY_CPh4kOU_B5kpZihj2btnnauAPjlQZ9th8G3b_PNkVpZEQ9mGGIxP8sD1cbuzHzbLRyYWmziS9BSqguDi-yWnhSvXbQPTpAoEKRXbY715dJVSBo1qRzmA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-headline-md text-stone-50">Garments</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Craftsmanship Section (Asymmetric) -->
+<section class="bg-surface-container py-xl">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-6 -left-6 seal-stamp">
+<span>禪</span>
+</div>
+<div class="p-4 border border-primary/10">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-1000" data-alt="An artisan's hands carefully shaping a clay vessel in a sun-drenched traditional workshop. Fine dust particles dance in the warm golden light. The environment is filled with weathered wooden tools, unfinished ceramic pieces, and the quiet atmosphere of focused labor. The visual style is highly tactile and minimalist, emphasizing the connection between the maker and the material in a serene temple setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOvRX1u_dhVe6h4k9fL215Y03MgX5RbOpKWmcqaEPbW1LvkXOy3ipucZmFSbCbLacdUArrTr0u7trLLEfdON9IadKslUZPcXFeB8RQzkLklEKqQpzNUjnvnbvwwADTajRAumUXjYDrO-csZu-2NpUba-9krvUcBgby5X1H6TE7OjVkBYbqXhkmcakQPkCfPKmk7SGyjAu8ha9EGdjYi-bVUHYZUyGcf3ooyXJMfMlx9AMnbJ38sFyD6R0dy_DRGCvPsFu_N-_acA"/>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<p class="font-label-md text-primary mb-2 uppercase tracking-widest">The Art of Stillness</p>
+<h2 class="font-headline-lg text-on-surface mb-6">Craftsmanship Rooted in Centuries of Devotion</h2>
+<p class="font-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Every object at Zen Heritage is more than a supply; it is a bridge to the past. Our artisans employ techniques passed down through generations, ensuring that every brushstroke on a silk robe and every carving on a sandalwood deity carries the weight of authentic tradition.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span>
+<div>
+<h4 class="font-headline-md text-sm mb-1 uppercase tracking-wider">Archival Sourcing</h4>
+<p class="font-body-md text-stone-600 text-sm">Materials selected for their historical accuracy and longevity.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="handyman">handyman</span>
+<div>
+<h4 class="font-headline-md text-sm mb-1 uppercase tracking-wider">Ritualistic Precision</h4>
+<p class="font-body-md text-stone-600 text-sm">Constructed following strict traditional proportions and spiritual rites.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Arrivals -->
+<section class="max-w-7xl mx-auto px-6 py-xl">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-primary">New Arrivals</h2>
+<p class="font-body-md text-stone-500 italic">Freshly curated pieces for your sanctuary</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group border-b border-primary/10 pb-6">
+<div class="relative overflow-hidden mb-4 bg-stone-100 h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A minimalist white ceramic incense holder with a single hole for a stick, placed on a dark, polished wooden surface. The lighting is high-contrast, creating deep shadows and bright highlights that emphasize the simple, elegant form of the object. The background is a blurred, neutral grey, maintaining the focus on the modern interpretation of a classic ritual item." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYVtSbvFWzLhs2xJJ_udyAiGeFm8Sgi7fwU3eTGBqvkgnQuZ39zpL50UxfpAKx6hiXSD7vClcWJ2lmIA9jezEO63Ge5AFjV50eHZ1DycHrpXHfw-NNxu4KOOL4MymRanzt8ck1suJPvPLL1S4nrHJbkZo6XyGUHgaRJLrMX8GVqr_IZ5rt9rntpR8bHQv7LcInfAKg1kjL1Zhvpgk0Evl_i1xyTxgzSu23yKj7EOKIGNr9EFCOtJ42N2ftDMNOhk_WOjoo6qVKgg"/>
+<div class="absolute top-4 right-4 bg-[#A52A2A] text-white text-[10px] px-2 py-1 uppercase tracking-widest font-bold">New</div>
+</div>
+<h3 class="font-headline-md text-base mb-1">Celadon Ritual Bowl</h3>
+<p class="font-label-md text-primary mb-3">¥12,400</p>
+<button class="w-full py-2 border border-primary/20 text-xs font-label-md hover:bg-primary hover:text-white transition-all uppercase tracking-widest">View Details</button>
+</div>
+<!-- Product Card 2 -->
+<div class="group border-b border-primary/10 pb-6">
+<div class="relative overflow-hidden mb-4 bg-stone-100 h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A bundle of high-quality Japanese incense sticks wrapped in traditional hand-pressed washi paper with a minimalist red seal stamp. The scene is shot in soft, natural morning light on a light-colored wooden table. The composition is clean and focused, highlighting the organic texture of the paper and the promise of a serene aromatic experience. The palette is muted and calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb2gDhRDxBS-t7Azsv87NwXMAVgTpF7KvfnNKCfgcwn6m9hrWfbC1u0Ddh5bPaVihMVG5IVeIXa_u4KJPVuK3Euc_FcvBVrDp-_yFi8Oh81bRLmxDBYTb4ZyD2nxEyszxSN9Eg-DOQPilITrX-NcHZNpKIJusCaDkK9W-zBxtSnLg9p6IPiNuHLkKi_IZnHlduM06kku31xcHiNXXg1XzdFQiWxlkgPIP2_p8VlajLJi3zTNnQr0N2a_gG2dZZhCYAtQqv-Ma3pA"/>
+</div>
+<h3 class="font-headline-md text-base mb-1">Morning Mist Incense</h3>
+<p class="font-label-md text-primary mb-3">¥4,800</p>
+<button class="w-full py-2 border border-primary/20 text-xs font-label-md hover:bg-primary hover:text-white transition-all uppercase tracking-widest">View Details</button>
+</div>
+<!-- Product Card 3 -->
+<div class="group border-b border-primary/10 pb-6">
+<div class="relative overflow-hidden mb-4 bg-stone-100 h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A set of traditional brass ritual bells arranged on a dark silk cloth. The bells have a soft, aged patina and reflect the warm, ambient lighting of a quiet room. The focus is sharp on the intricate engravings on the surface of the primary bell, while the others recede into a soft blur. The overall mood is prestigious and historically weighted, suggesting long-standing temple traditions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaKNNa1lDlj5IRQQzffkERxTs9_n80UQ59-6fg53S7a0CdGK8UR8K8YzRVWCwQ7GgezfMpzIayO3MNO9A2Hb0P0hGrFnuTXxklFvAH64ait7OWQyB5xbc_jp5jBpFSJjs5lMUknxLS0BPL2_HWBcPxc3ofyAzdt_rROmBabNtHHkxSGyWOsI3Vu42Ai2N7X0o7uR5ZwwsBx57fM9c2x86RLCw_Nl1aDeNnCOsaHvpFBz3G_eaegV8bGjt77dmpbVeCDPgJ3OJM7g"/>
+</div>
+<h3 class="font-headline-md text-base mb-1">Bronze Hand Bell</h3>
+<p class="font-label-md text-primary mb-3">¥28,000</p>
+<button class="w-full py-2 border border-primary/20 text-xs font-label-md hover:bg-primary hover:text-white transition-all uppercase tracking-widest">View Details</button>
+</div>
+<!-- Product Card 4 -->
+<div class="group border-b border-primary/10 pb-6">
+<div class="relative overflow-hidden mb-4 bg-stone-100 h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A stack of folded meditation cushions made from heavy, charcoal-grey linen. The fabric has a visible, high-quality weave. They are placed in a corner of a minimalist, zen-inspired room with light wood floors and a sliding shoji screen in the background. The lighting is soft and indirect, creating a peaceful and inviting atmosphere for practice. The design emphasizes material honesty and functional stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCav59K-uXRTx1B4p58mPfpuXek4AxdkKpw0yeL6hJ-N3k8k8nBHMoV-va3CdsmwgG1jGOaPs6utR4IdsQRTcJ7syd-pK9Y9kmrYEzLSKmszn4Ph50crk2LyIxz53S77_ihiQeeMt_vj8EGp7V7qaLxfUhnFMoG8waVrAguD2ptI7bcj1VhmqXCyvIgq4uho5zV4rYZGJJaQIqam8zNd7yWVvp6H-p-eB-W7VaEKQsjZs6DL7eaSwnB61gdUpQ-RMV5-FxbZ76hfw"/>
+</div>
+<h3 class="font-headline-md text-base mb-1">Linen Zafu Cushion</h3>
+<p class="font-label-md text-primary mb-3">¥15,200</p>
+<button class="w-full py-2 border border-primary/20 text-xs font-label-md hover:bg-primary hover:text-white transition-all uppercase tracking-widest">View Details</button>
+</div>
+</div>
+</section>
+<!-- Wholesale Teaser -->
+<section class="max-w-5xl mx-auto px-6 py-xl">
+<div class="border border-primary/10 p-12 text-center bg-stone-50">
+<div class="flex justify-center mb-6">
+<div class="seal-stamp"><span>合</span></div>
+</div>
+<h2 class="font-headline-lg text-primary mb-4 uppercase tracking-widest">Wholesale Inquiry</h2>
+<p class="font-body-md text-stone-600 mb-8 max-w-2xl mx-auto">
+                    We partner with temples and specialized retailers globally. Access our complete inventory and bespoke manufacturing services for large-scale ritual installations.
+                </p>
+<div class="max-w-md mx-auto">
+<div class="flex border-b-2 border-primary/20 focus-within:border-primary transition-all mb-6">
+<input class="w-full bg-transparent border-none py-3 px-4 focus:ring-0 font-body-md" placeholder="Email Address" type="email"/>
+<button class="px-6 text-primary font-label-md hover:text-amber-800 transition-colors">SUBMIT</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 border-t border-stone-300 mt-12">
+<div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6">
+<div class="text-lg font-bold text-amber-800 font-headline-md uppercase tracking-[0.2em]">
+                Zen Heritage
+            </div>
+<div class="flex flex-wrap justify-center gap-8 font-serif text-sm">
+<a class="text-stone-600 hover:text-amber-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-stone-600 hover:text-amber-600 transition-colors" href="#">Wholesale Terms</a>
+<a class="text-stone-600 hover:text-amber-600 transition-colors" href="#">Shipping Rituals</a>
+</div>
+<div class="text-stone-800 font-serif text-sm leading-relaxed text-center md:text-right">
+                © 2024 Zen Heritage Temple Supplies.<br/>
+<span class="text-stone-500">Wholesaler Contact: +81 3-1234-5678 | contact@zenheritage.com</span>
+</div>
+</div>
+</footer>
+</body></html>
